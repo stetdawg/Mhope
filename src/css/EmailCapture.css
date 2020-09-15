@@ -1,0 +1,8 @@
+#email-capture1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #email-capture1 #form {
+    display: flex;
+    flex-direction: column;
+    width: 35%; }

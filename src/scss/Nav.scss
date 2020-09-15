@@ -1,0 +1,51 @@
+
+@import "config";
+
+
+.navBar{
+    display: flex;
+    background-color:#F7F7F7;
+    border-radius: 0 0 3px 3px;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    height: $nav_bar;    
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.548);
+    z-index: 100;
+    #logo{
+        height: 100px;
+        margin-top: -5px;
+        
+        @include for_breakpoint(desktop){
+            height: 120px;
+        }
+        min-width: 200px;
+    }
+    nav{
+        min-width: 50%;
+
+    ul li{        
+        justify-content: space-evenly;
+        width: auto;
+        list-style-type: none;
+        height: 100%;
+        float: right;
+        @include for_breakpoint(desktop){
+            margin-top: 2em;
+            float: left;
+        }
+
+        a{
+            color:rgba(0, 0, 0, 0.857);
+            text-decoration-line: none;
+            font-size: 1.2em;
+            margin: 0 50px;
+            height: 100px;
+            a:hover{
+                background-color: azure;
+                
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,41 @@
+
+/*
+
+  Name:   _config.scss
+  Site:   Mastering Hope
+  Auth:   Stetson Baber
+  Crtd:   9/8/2020
+  Mod:
+
+*/
+
+*{box-sizing: border-box;}
+
+
+@mixin for_breakpoint($breakpoints) {
+  $conditions : ();
+  @each $breakpoint in $breakpoints {
+      // If the key exists in the map
+      $conditions: append(
+          $conditions,
+          #{inspect(map-get($media_queries, $breakpoint))},
+          comma
+      );
+  }
+  @media #{$conditions} {
+      @content;
+  }
+}
+
+$tablet_width: 1024px;
+$media_queries : (
+    'mobile': only screen and (min-width: 0px),
+    'tablet': only screen and (min-width: 600px) and (max-width: $tablet_width),
+    'desktop': only screen and (min-width: ($tablet_width + 1)),
+    'retina2': only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+    'retina3': only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi),
+    'landscape': screen and (orientation:landscape),
+    'portrait': screen and (orientation:portrait)
+);
+
+$nav_bar: 114px;
