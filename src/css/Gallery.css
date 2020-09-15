@@ -1,0 +1,15 @@
+/*
+
+  Name:   _config.scss
+  Site:   Mastering Hope
+  Auth:   Stetson Baber
+  Crtd:   9/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
+.Gallery {
+  height: AUTO;
+  padding-top: 114px; }

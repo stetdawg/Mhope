@@ -15,7 +15,7 @@ export default class Hero extends Component {
     render() {
         return (
             <div id='hero-container'>
-                <img src={MHFB} alt="Hero-Image"/>
+                <img src={MHFB} alt=""/>
             </div>
         )
     }
