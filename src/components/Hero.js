@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import MHFB from '../assets/MHFB.jpg'
+import MHFB from '../assets/MHFB.webp'
 import '../scss/Hero.scss'
 
 

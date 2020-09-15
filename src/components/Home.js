@@ -4,9 +4,9 @@ import '../scss/Home.scss'
 import Hero from './Hero'
 import HomeItem from './HomeItem'
 import EmailCapture from './EmailCapture'
-import img1 from '../assets/mh event2.jpg'
-import img2 from '../assets/IMG_3492.JPG'
-import img3 from '../assets/mh30.jpg'
+import img1 from '../assets/mh event2.webp'
+import img2 from '../assets/IMG_3492.webp'
+import img3 from '../assets/mh30.webp'
 
 
 
