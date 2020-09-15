@@ -1,3 +1,2 @@
-src/assets/** !text !filter !merge !diff
 *.webp filter=lfs diff=lfs merge=lfs -text
 src/assets/*.webp filter=lfs diff=lfs merge=lfs -text
