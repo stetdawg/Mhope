@@ -1,0 +1,34 @@
+/*
+
+  Name:   _config.scss
+  Site:   Mastering Hope
+  Auth:   Stetson Baber
+  Crtd:   9/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
+#about-us-container {
+  display: grid; }
+  @media (min-width: 0px) {
+    #about-us-container {
+      margin-top: 114px; }
+      #about-us-container #ITEL-Mobile-Model {
+        background-color: #37712b;
+        height: 100%;
+        max-width: 100%; }
+      #about-us-container #ITEL-Model {
+        display: none; } }
+  @media (min-width: 1025px) {
+    #about-us-container {
+      margin-top: 10%;
+      grid-template-columns: repeat(2, 1fr); }
+      #about-us-container #ITEL-Mobile-Model {
+        display: none; }
+      #about-us-container #ITEL-Model {
+        max-height: 600px;
+        display: block; } }
+  #about-us-container #About-us-copy {
+    margin: 1em 3em; }

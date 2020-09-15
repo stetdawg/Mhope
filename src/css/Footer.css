@@ -1,0 +1,29 @@
+.footer {
+  position: relative;
+  min-height: 150px;
+  width: 100%;
+  background-color: #75C366;
+  display: grid;
+  grid-template-areas: "s a . m . e" "c c c c c c";
+  gap: 0;
+  font-size: .81em; }
+  .footer h4 {
+    margin-bottom: 0; }
+  .footer #contact {
+    grid-area: a; }
+  .footer #social-media-links {
+    grid-area: s; }
+    .footer #social-media-links #link-container {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      margin-left: 5em; }
+      .footer #social-media-links #link-container #Twitter-Logo {
+        padding-right: 20px; }
+      .footer #social-media-links #link-container .social-icons {
+        height: 1.4em; }
+  .footer #Copyright {
+    margin: 1em 0px;
+    grid-area: c; }
+  .footer #email-capture1 {
+    grid-area: m; }

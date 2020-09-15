@@ -1,0 +1,35 @@
+@import "config";
+
+#about-us-container{
+display: grid;
+    @include for_breakpoint(mobile){
+        margin-top: $nav_bar;
+        #ITEL-Mobile-Model{
+            background-color: #37712b;
+
+            height: 100%;
+            max-width: 100%;
+        }
+        #ITEL-Model{
+            display: none;
+        }
+    }
+
+    @include for_breakpoint(desktop){
+        margin-top: 10%;
+        grid-template-columns: repeat(2, 1fr);
+
+        #ITEL-Mobile-Model{
+            display: none;
+        }
+        #ITEL-Model{
+            max-height: 600px;
+            display: block;
+            }
+    }
+#About-us-copy{
+    margin: 1em 3em;
+}
+}
+
+
