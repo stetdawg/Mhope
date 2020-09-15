@@ -1,0 +1,44 @@
+.footer{
+    position: relative;
+    min-height: 150px;
+    width: 100%;
+    background-color: #75C366;
+    display: grid;
+    grid-template-areas: 
+        "s a . m . e"
+        "c c c c c c";
+    gap: 0;
+    font-size: .81em;
+    h4{
+        margin-bottom: 0;
+    }
+
+    #contact{
+        grid-area: a;
+    }
+    #social-media-links{
+        grid-area: s;
+
+        #link-container{
+            display: flex;
+            flex-direction: column;
+            float: left;
+            margin-left: 5em;
+            #Twitter-Logo{
+                padding-right: 20px;
+            }
+            .social-icons{
+                height: 1.4em;
+            }
+        }
+    }
+    #Copyright{
+        margin: 1em 0px;
+        grid-area: c;
+    }
+
+    #email-capture1{
+        grid-area: m;
+    }
+
+}
