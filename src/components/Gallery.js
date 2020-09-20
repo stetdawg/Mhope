@@ -28,7 +28,7 @@ console.log(grid)
 
 
 const n = ({columnIndex, rowIndex, key, style}) => <div key={key} style={style}>
-<img src={grid[columnIndex][rowIndex]} alt="Gallery Item"/>
+<img src={grid[columnIndex][rowIndex]} loading="lazy" width="300" height="200" alt="Gallery Item"/>
 </div>
 
 
