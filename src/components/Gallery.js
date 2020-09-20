@@ -8,15 +8,15 @@ import 'aos/dist/aos.css'
 import importAll from 'import-all.macro'
 import '../scss/Gallery.scss'
     
-const a = Object.values(importAll.sync('../assets/*.webp'))
+const a = Object.values(importAll.sync('../assets/thumbnails/*.webp'))
 
 
 
 const grid = [[],[],[],[],[]]
     let acount = 0
 
-for(let i = 0; i<8; i++ ){
-    for(let j = 0; j<=4; j++){
+for(let i = 0; i<10; i++ ){
+    for(let j = 0; j<5; j++){
         grid[j].push(a[acount])
         acount++
     }
@@ -36,16 +36,20 @@ key={key} style={style}>
 
 
 export default class Gallery extends Component {
+    
     render() {
+        let intViewportWidth = window.innerWidth
+        let intViewportHeight = window.innerHeight
+
         return (
             <div className="Gallery"> 
-                <AutoSizer >
+                <AutoSizer  defaultWidth={intViewportWidth} defaultHeight={intViewportHeight}>
                     {({ height, width }) => (    
                         <Grid
                         className="Grid"
-                        columnCount={4}
-                        columnWidth={435}
-                        rowCount={8}
+                        columnCount={5}
+                        columnWidth={380}
+                        rowCount={6}
                         rowWidth={100}
                         rowHeight={220}
                         width={width}
