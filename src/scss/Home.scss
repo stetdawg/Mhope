@@ -2,7 +2,9 @@
 @import "config";
 
 #home{
-
+display: flex;
+flex-wrap: wrap;
+padding-top: $nav_bar;
     #hero{
         z-index: 1;
         overflow: hidden;

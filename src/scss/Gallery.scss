@@ -1,7 +1,11 @@
 @import "config";
 
 .Gallery{
-    height: AUTO;
+    min-height: 677px;
+    flex: 1;
     padding-top: $nav_bar;
+    img{
+        width: 300px;
+    }
 
 }

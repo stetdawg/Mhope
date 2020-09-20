@@ -11,5 +11,8 @@
   box-sizing: border-box; }
 
 .Gallery {
-  height: AUTO;
+  min-height: 677px;
+  flex: 1;
   padding-top: 114px; }
+  .Gallery img {
+    width: 300px; }
