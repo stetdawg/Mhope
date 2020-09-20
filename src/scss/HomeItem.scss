@@ -1,135 +1,76 @@
 @import "config";
-#text-holder{
-  color: rgba(0, 0, 0, 0.870);
+
+.gallery-box{
+  -webkit-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
+  -moz-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
+  box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
+    min-width: 70%;    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    @include for_breakpoint(desktop){
+      flex-direction: row;
+      margin: 3em;
+    
+    }
+    @include for_breakpoint(tablet){
+      #hero-gallery-image{
+        height: 100%;
+      }
+      height: fit-content;
+    }
+  #text-holder{
+    color: rgba(0, 0, 0, 0.870);
+    text-align: left;
+    margin: 0 1em;
+  
+    @include for_breakpoint(desktop){
+      width: 60%;
+      height: 100%;
+      margin: 0 2em;
+    }
+
+    .title{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 1em;
+    }
+    .copy{
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5rem;
+  
+    }
+  }
 }
+
       #gallery-item-container-1{
-        -webkit-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-        -moz-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-        box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-        margin: 3em;
-        min-width: 70%;    
-        display: flex;
-        height: 400px;
         @include for_breakpoint(desktop){
           margin-right: 10%;
         }
         border-radius: 10px;
         overflow: hidden;
         background-color: #B3DCA7;
-        #img-holder{     
-          width: 400px;
-          height: 100%;
-          overflow: hidden;
-          img{
-            position: relative;
-            width: 500px;
-            right: 100px;
-            width: auto;
-            height: 100%;
-          }
-        }
-        #text-holder{
-          width: 60%;
-          height: 100%;
-          margin: 0 2em;
-          .title{
-              font-family: 'Poppins', sans-serif;
-              margin-top: 1em;
-          }
-          .copy{
-              font-family: 'Open Sans', sans-serif;
-              line-height: 1.5rem;
-  
-          }
-      }
       }
     
-      #gallery-item-container-2{
-        -webkit-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-        -moz-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-        box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-
-        
-        margin: 3em;
-        min-width: 70%;    
-        display: flex;
-        max-height: 500px;
+      #gallery-item-container-2{  
         @include for_breakpoint(desktop){
           margin-left: 10%;
         }
         border-radius: 10px;
         overflow: hidden;
         background-color: #B3DCA7;
-        #img-holder{
-          width: 540px;
-          height: 100%;
-          overflow: hidden;
-            img{
-              position: relative;
-              margin-left: -2em;
-              width: auto;
-              height: 100%;
-          }
-        }
-        #text-holder{
-          width: 60%;
-          height: 100%;
-          margin: 0 2em;
-          .title{
-              font-family: 'Poppins', sans-serif;
-              margin-bottom: 0;
-
-          }
-          .copy{
-              font-family: 'Open Sans', sans-serif;
-              line-height: 1.45rem;
-              margin-bottom: 10px;
-          }
-      }
       }  
     
          
       #gallery-item-container-3{
-      -webkit-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-      -moz-box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-      box-shadow: -9px 6px 14px -4px rgba(0,0,0,0.52);
-        margin: 3em;
-        min-width: 70%;    
-        display: flex;
-        height: 400px;
         @include for_breakpoint(desktop){
           margin-right: 10%;
+
         }
         border-radius: 10px;
         overflow: hidden;
         background-color: #B3DCA7;
-        #img-holder{
-          width: 400px;
-          height: 100%;
-          overflow: hidden;
-            margin-right: 1em;
-            img{
-              position: relative;
-             right: 140px;
-              width: auto;
-              height: 100%;
-          }
-        }
 
-        #text-holder{
-          width: 60%;
-          height: 100%;
-          margin: 0 2em;
-          .title{
-              font-family: 'Poppins', sans-serif;
-              margin-top: 1em;
-          }
-          .copy{
-              font-family: 'Open Sans', sans-serif;
-              line-height: 1.5rem;
-  
-          }
-      }
+
       }  
     
 

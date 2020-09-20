@@ -5,10 +5,18 @@ import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
 import {Route, Switch } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 
-
+AOS.init({
+  offset: 200,
+  deslay: 3,
+  once: true,
+  duration: 900,
+  easing: "ease-in-cubic"
+})
 
 
 function App() { 

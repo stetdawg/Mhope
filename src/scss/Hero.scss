@@ -1,8 +1,21 @@
+@import "config";
 
-#hero-container{
-    max-width: 100%;
-    img{
+
+    #mobile-hero{
         max-width: 100%;
-        position: relative;
+
+    }
+    #desktop-hero{
+        display: none;
+    }
+    @include for_breakpoint(desktop){
+        #mobile-hero{
+            display: none;
         }
-}
+        #desktop-hero{
+                max-width: 100%;
+                position: relative;
+                display:block;
+                }
+    }
+    

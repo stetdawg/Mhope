@@ -1,5 +1,25 @@
-#hero-container {
+/*
+
+  Name:   _config.scss
+  Site:   Mastering Hope
+  Auth:   Stetson Baber
+  Crtd:   9/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
+#mobile-hero {
   max-width: 100%; }
-  #hero-container img {
+
+#desktop-hero {
+  display: none; }
+
+@media (min-width: 1025px) {
+  #mobile-hero {
+    display: none; }
+  #desktop-hero {
     max-width: 100%;
-    position: relative; }
+    position: relative;
+    display: block; } }

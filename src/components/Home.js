@@ -1,20 +1,21 @@
 import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import '../scss/Home.scss'
-
 import Hero from './Hero'
 import HomeItem from './HomeItem'
 import EmailCapture from './EmailCapture'
-import img1 from '../assets/mh event2.webp'
-import img2 from '../assets/IMG_3492.webp'
-import img3 from '../assets/mh30.webp'
-
+import img1 from '../assets/hero/hero1.webp'
+import img2 from '../assets/hero/hero2.webp'
+import img3 from '../assets/hero/hero3.webp'
 
 
 const Home = () => <> 
 <div  id="home">
 
 
-        <div  id="hero"><Hero /></div>
+
+     <Hero />
 
     <EmailCapture />
 

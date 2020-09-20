@@ -14,12 +14,6 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 114px; }
-  #home #hero {
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
-    max-height: 740px;
-    background-color: #F2F9F0; }
   #home #email-capture {
     background-color: #75C366;
     height: 84px;

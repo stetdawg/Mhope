@@ -2,6 +2,8 @@ import React,{ Component, Fragment } from 'react'
 import ResponsiveGallery from 'react-responsive-gallery'
 import { FixedSizeGrid as Grid} from 'react-window'
 import AutoSizer from "react-virtualized-auto-sizer";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import importAll from 'import-all.macro'
 import '../scss/Gallery.scss'
@@ -27,7 +29,8 @@ console.log(grid)
 
 
 
-const n = ({columnIndex, rowIndex, key, style}) => <div key={key} style={style}>
+const n = ({columnIndex, rowIndex, key, style}) => <div data-aos="fade-in"
+key={key} style={style}>
 <img src={grid[columnIndex][rowIndex]} loading="lazy" width="300" height="200" alt="Gallery Item"/>
 </div>
 
