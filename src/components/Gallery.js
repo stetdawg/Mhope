@@ -1,6 +1,5 @@
 import React,{ Component } from 'react'
-import ResponsiveGallery from 'react-responsive-gallery-cloned'
-import { FixedSizeList } from 'react-window'
+import ResponsiveGallery from 'react-responsive-gallery'
 import importAll from 'import-all.macro'
 import '../scss/Gallery.scss'
     

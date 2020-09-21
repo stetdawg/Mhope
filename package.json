@@ -36,16 +36,16 @@
     ]
   },
   "devDependencies": {
+    "aos": "2.3.4",
+    "import-all.macro": "3.1.0",
     "node-sass": "^4.14.1",
-    "react-router-dom": "^5.2.0",
-    "redux": "4.0.5",
     "react-redux": "7.2.0",
+    "react-responsive-gallery": "github:stetdawg/react-responsive-gallery-cloned",
+    "react-router-dom": "^5.2.0",
+    "react-virtualized-auto-sizer": "1.0.2",
+    "react-window": "1.8.5",
+    "redux": "4.0.5",
     "redux-devtools-extension": "2.13.8",
-    "redux-thunk": "2.3.0",
-    "react-responsive-gallery-cloned": "https://github.com/stetdawg/react-responsive-gallery-cloned.git",
-	"react-virtualized-auto-sizer": "1.0.2",
-	"react-window": "1.8.5",
-	"aos": "2.3.4",
-    "import-all.macro":  "3.1.0"
+    "redux-thunk": "2.3.0"
   }
 }
