@@ -1,70 +1,137 @@
-import React,{ Component, Fragment } from 'react'
+import React,{ Component } from 'react'
 import ResponsiveGallery from 'react-responsive-gallery'
-import { FixedSizeGrid as Grid} from 'react-window'
-import AutoSizer from "react-virtualized-auto-sizer";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
+import { FixedSizeList } from 'react-window'
 import importAll from 'import-all.macro'
 import '../scss/Gallery.scss'
     
 const a = Object.values(importAll.sync('../assets/thumbnails/*.webp'))
-
-
-
-const grid = [[],[],[],[],[]]
-    let acount = 0
-
-for(let i = 0; i<10; i++ ){
-    for(let j = 0; j<5; j++){
-        grid[j].push(a[acount])
-        acount++
-    }
-}
-
-
-console.log(grid)
-
-
-
-
-
-const n = ({columnIndex, rowIndex, key, style}) => <div data-aos="fade-in"
-key={key} style={style}>
-<img src={grid[columnIndex][rowIndex]} loading="lazy" width="300" height="200" alt="Gallery Item"/>
-</div>
+console.log(a)
 
 
 export default class Gallery extends Component {
-    
     render() {
-        let intViewportWidth = window.innerWidth
-        let intViewportHeight = window.innerHeight
-
         return (
-            <div className="Gallery"> 
-                <AutoSizer  defaultWidth={intViewportWidth} defaultHeight={intViewportHeight}>
-                    {({ height, width }) => (    
-                        <Grid
-                        className="Grid"
-                        columnCount={5}
-                        columnWidth={380}
-                        rowCount={6}
-                        rowWidth={100}
-                        rowHeight={220}
-                        width={width}
-                        height={height}
-                        itemSize={1}
-                        itemCount={a.length}
-                        > 
-                        {n}
+           <div className="Gallery"
+           >
+ <ResponsiveGallery
 
-                        </Grid>
+     images={[
+         
+               {         
+                   src: a[0],
+               },
+               {
+                   src: a[1],
+               },
+               {
+                   src: a[2],
+               },
+               {
+                   src: a[3],
+               },
+               {
+                   src: a[4],
+               },
+               {
+                   src: a[5],
+               },
+               {
+                   src: a[6],
+               },
+               {
+                   src: a[7],
+               },
+               {
+                   src: a[8],
+               },
+               {
+                   src: a[9],
+               },
+               {
+                   src: a[10],
+               },
+               {
+                   src: a[11],
+               },
+               {
+                   src: a[12],
+               },
+               {
+                   src: a[13],
+               },
+               {
+                   src: a[14],
+               },
+               {
+                   src: a[15],
+               },
+               {
+                   src: a[16],
+               },
+               {
+                   src: a[17],
+               },
+               {
+                   src: a[18],
+               },
+               {
+                   src: a[19],
+               },
+               {
+                   src: a[21],
+               },
+               {
+                   src: a[22],
+               },
+               {
+                   src: a[23],
+               },
+               {
+                   src: a[24],
+               },
+               {
+                   src: a[25],
+               },
+               {
+                   src: a[26],
+               },
+               {
+                   src: a[27],
+               },
+               {
+                   src: a[28],
+               },
+               {
+                   src: a[29],
+               },
+               {
+                   src: a[30],
+               },
+               {
+                   src: a[31],
+               },
+               {
+                   src: a[32],
+               },
+               {
+                   src: a[33],
+               },
+               {
+                   src: a[34],
+               },
+               {
+                   src: a[35],
+               },
+               {
+                   src: a[36],
+               },
+           ]}/>
+   
+           </div>
+            
 
-                    )}
-                </AutoSizer>   
-            </div>
-    )}
+        )
+    }
 }
 
 

@@ -42,7 +42,7 @@
     "react-redux": "7.2.0",
     "redux-devtools-extension": "2.13.8",
     "redux-thunk": "2.3.0",
-    "react-responsive-gallery": "1.2.5",
+    "react-responsive-gallery-cloned": "https://github.com/stetdawg/react-responsive-gallery-cloned.git",
 	"react-virtualized-auto-sizer": "1.0.2",
 	"react-window": "1.8.5",
 	"aos": "2.3.4",

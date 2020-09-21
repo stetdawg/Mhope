@@ -1,7 +1,7 @@
 import React from 'react'
 import '../scss/AboutUs.scss'
-import img from '../assets/ITEL MODEL.png'
-import img1 from '../assets/ITEL MOBILE.png'
+import img from '../assets/ITEL MODEL.webp'
+import img1 from '../assets/ITEL MOBILE.webp'
 
 
 const AboutUs = () => <div className="bx"> 

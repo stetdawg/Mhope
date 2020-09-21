@@ -15,18 +15,12 @@ const NavBar = () => <>
                 <li>
                     <NavLink to="/AboutUs">About Us</NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink to="/Contact">Contact</NavLink>
-                </li>
+                </li> */}
                 <li>
                     <NavLink to="/Gallery">Gallery</NavLink>
                 </li>
-                {/* <ui>
-                    <NavLink to="/"></NavLink>
-                </ui>
-                <ui>
-                    <NavLink to="/"></NavLink>
-                </ui>*/}
             </ul> 
         </nav>
     </div>

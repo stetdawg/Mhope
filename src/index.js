@@ -6,11 +6,21 @@ import './scss/Home.scss'
 import App from './App.js'
 import * as serviceWorker from './serviceWorker'
 import {BrowserRouter} from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
+AOS.init({
+  offset: 200,
+  deslay: 3,
+  once: false,
+  duration: 900,
+  easing: "ease-in-cubic"
+})
 ReactDOM.render(
   <React.StrictMode>
   <BrowserRouter>
+  
   <App />
 
   </BrowserRouter>
