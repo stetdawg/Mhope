@@ -11,6 +11,7 @@
     @include for_breakpoint(desktop){
         #mobile-hero{
             display: none;
+            
         }
         #desktop-hero{
                 max-width: 100%;
@@ -18,4 +19,3 @@
                 display:block;
                 }
     }
-    

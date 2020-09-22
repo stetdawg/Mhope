@@ -12,11 +12,10 @@
 
 #home {
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 114px; }
+  flex-wrap: wrap; }
   #home #email-capture {
     background-color: #75C366;
-    height: 84px;
+    min-height: 84px;
     width: 100%;
     -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.548);
     -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.548);
@@ -24,7 +23,7 @@
   #home #gallery {
     position: relative;
     background-color: #EBEBEB;
-    min-height: 300px;
+    min-height: 0px;
     width: 100%;
     display: flex;
     flex-flow: wrap;

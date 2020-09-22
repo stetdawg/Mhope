@@ -20,6 +20,9 @@ export default class Gallery extends Component {
                    src: a[0],
                },
                {
+                   src: a[35],
+               },
+               {
                    src: a[1],
                },
                {
@@ -118,12 +121,7 @@ export default class Gallery extends Component {
                {
                    src: a[34],
                },
-               {
-                   src: a[35],
-               },
-               {
-                   src: a[36],
-               },
+
            ]}/>
    
            </div>

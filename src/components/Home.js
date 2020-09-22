@@ -10,23 +10,30 @@ import img2 from '../assets/hero/hero2.webp'
 import img3 from '../assets/hero/hero3.webp'
 
 
-export default function Home() { 
-const [isLoading, setisLoading] = useState(true)
+export default class Home extends React.Component { 
+constructor(props) {
+    super(props)
 
-
-useEffect(() => {
-    // effect
-    return () => {
-        // cleanup
+    this.state = {
+         isVisible: false
     }
- }, [/**input**/])
- 
+}
+
+componentDidMount(){
+    setTimeout(() => {
+        this.setState({isVisible: true})}, 500) 
+    
+}
+
+render(){
 return (
 <div  id="home">
      <Hero />
     <EmailCapture />
         <div id="gallery">
-            <HomeItem
+            {
+                this.state.isVisible ? <> 
+                <HomeItem
                 id={"gallery-item-container-1"}
                 image={img1}
                 title={"Overview"}
@@ -47,8 +54,9 @@ return (
                 copy={<>
                         Mastering Hope's impact has been tremendous. The organization has received over $80,000 in donations from the community, holding more than 11 distribution events, supplying over 6,000 food kits, 2,000 school supply kits, 700 gift cards, 700 toys, in addition to providing tons of clothes to men, women, and children. We have also distributed informational resources varying from food bank lists, free clinics, church services, and school district resources. Every dollar received is used to support our communities.
 
-            </>}/>
+            </>}/> </>
+            :null}
         </div>
 </div>
-)
+)}
 }
