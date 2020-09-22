@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../scss/Home.scss'
@@ -10,16 +10,21 @@ import img2 from '../assets/hero/hero2.webp'
 import img3 from '../assets/hero/hero3.webp'
 
 
-const Home = () => <> 
+export default function Home() { 
+const [isLoading, setisLoading] = useState(true)
+
+
+useEffect(() => {
+    // effect
+    return () => {
+        // cleanup
+    }
+ }, [/**input**/])
+ 
+return (
 <div  id="home">
-
-
-
      <Hero />
-
     <EmailCapture />
-
-
         <div id="gallery">
             <HomeItem
                 id={"gallery-item-container-1"}
@@ -44,8 +49,6 @@ const Home = () => <>
 
             </>}/>
         </div>
-
 </div>
-</>
-
-export default Home
+)
+}
