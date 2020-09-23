@@ -1,4 +1,5 @@
 .footer {
+  flex-shrink: 0;
   position: relative;
   min-height: 150px;
   width: 100%;
@@ -6,24 +7,30 @@
   display: grid;
   grid-template-areas: "s a . m . e" "c c c c c c";
   gap: 0;
-  font-size: .81em; }
+  font-size: 1em; }
   .footer h4 {
     margin-bottom: 0; }
-  .footer #contact {
-    grid-area: a; }
+  .footer #contact-us {
+    grid-area: a;
+    text-align: left;
+    padding-left: 1em; }
   .footer #social-media-links {
-    grid-area: s; }
+    grid-area: s;
+    display: flex;
+    flex-direction: column; }
     .footer #social-media-links #link-container {
       display: flex;
       flex-direction: column;
-      float: left;
-      margin-left: 5em; }
+      float: left; }
       .footer #social-media-links #link-container #Twitter-Logo {
         padding-right: 20px; }
       .footer #social-media-links #link-container .social-icons {
-        height: 1.4em; }
+        height: 1.4em;
+        margin-right: 4px; }
   .footer #Copyright {
     margin: 1em 0px;
     grid-area: c; }
-  .footer #email-capture1 {
-    grid-area: m; }
+  .footer a {
+    text-decoration: none;
+    color: black;
+    -moz-text-decoration-color: inherit; }

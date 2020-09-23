@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import HeroImage from '../assets/hero/MHFB-opt.webp'
 import HeroMobileImage from '../assets/hero/MHFB-opti-mobile.webp'
-import HeroXL from '../assets/hero/mhfbjumbo.webp'
+import HeroXL from '../assets/hero/b.webp'
 
 import '../scss/Hero.scss'
 
@@ -14,17 +14,8 @@ const innderViewportWidth = window.innerWidth
 
 export default class Hero extends Component {
 
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-             
-        }
-    }
-    
-    componentDidMount() {
-        
-    }
+
+   
     imgRotate = () => {
         
     }

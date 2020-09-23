@@ -1,9 +1,14 @@
 @import "config";
 
-#about-us-container{
-display: grid;
+
+  
+    #about-us-container{
+        flex: 1 0 auto;
+        display: grid;
     @include for_breakpoint(mobile){
         margin-top: $nav_bar;
+        padding-top: 0;
+
         #ITEL-Mobile-Model{
             background-color: #37712b;
 
@@ -16,15 +21,16 @@ display: grid;
     }
 
     @include for_breakpoint(desktop){
-        margin-top: 10%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: min-content 50vw;
+        padding-top: 1em;
 
         #ITEL-Mobile-Model{
             display: none;
         }
         #ITEL-Model{
-            max-height: 600px;
             display: block;
+            max-height: 100%;
+            max-width: 50vw;
             }
     }
 #About-us-copy{

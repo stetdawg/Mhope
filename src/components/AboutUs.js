@@ -3,10 +3,13 @@ import '../scss/AboutUs.scss'
 import img from '../assets/ITEL MODEL.webp'
 import img1 from '../assets/ITEL MOBILE.webp'
 
+const innerViewportHeight = window.innerHeight
+let aboutUsStyle = {
+    height: innerViewportHeight
+}
+const AboutUs = () => 
 
-const AboutUs = () => <div className="bx"> 
-
-    <div id="about-us-container">
+    <div id="about-us-container" style={null}>
 
         <img src={img} alt="ITEL MODEL" id="ITEL-Model" />
         <img src={img1} alt="ITEL MODEL" id="ITEL-Mobile-Model" />
@@ -20,6 +23,5 @@ const AboutUs = () => <div className="bx">
 
     </div>
 
-</div>
 
 export default AboutUs

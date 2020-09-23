@@ -1,25 +1,26 @@
 
+@import "config";
 
 html {
 margin: 0;
 padding: 0;
 border: 0;
 scroll-behavior: smooth;
-
+height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    
+    height: 100%;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  
 }
 
 code {
@@ -37,10 +38,9 @@ p {
   position: relative;
   display: flex;
   flex-flow: wrap;
-  margin: 0;
   padding: 0;
   border: 0;
-
+  margin: 0;
   width: 100%;
   height: auto;  
 

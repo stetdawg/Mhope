@@ -4,13 +4,14 @@ import NavBar from './components/NavBar'
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
+import Donate from './components/CheckoutPage'
+import Success from './components/Success'
+
 import {Route, Switch } from 'react-router-dom'
 
 
 
-
-
-function App() { 
+ function App() { 
 
   return (
     <div className="App">
@@ -28,6 +29,14 @@ function App() {
 
         <Route exact path="/Gallery">
           <Gallery/>
+        </Route>
+
+        <Route exact path="/Donate">
+          <Donate/>
+        </Route>
+
+        <Route exact path="/Donate">
+          <Success/>
         </Route>
       </Switch>
       <Footer />

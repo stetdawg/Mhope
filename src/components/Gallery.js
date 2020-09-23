@@ -4,7 +4,6 @@ import importAll from 'import-all.macro'
 import '../scss/Gallery.scss'
     
 const a = Object.values(importAll.sync('../assets/thumbnails/*.webp'))
-console.log(a)
 
 
 export default class Gallery extends Component {

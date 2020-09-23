@@ -11,10 +11,12 @@
   box-sizing: border-box; }
 
 #about-us-container {
+  flex: 1 0 auto;
   display: grid; }
   @media (min-width: 0px) {
     #about-us-container {
-      margin-top: 114px; }
+      margin-top: 114px;
+      padding-top: 0; }
       #about-us-container #ITEL-Mobile-Model {
         background-color: #37712b;
         height: 100%;
@@ -23,12 +25,13 @@
         display: none; } }
   @media (min-width: 1025px) {
     #about-us-container {
-      margin-top: 10%;
-      grid-template-columns: repeat(2, 1fr); }
+      grid-template-columns: min-content 50vw;
+      padding-top: 1em; }
       #about-us-container #ITEL-Mobile-Model {
         display: none; }
       #about-us-container #ITEL-Model {
-        max-height: 600px;
-        display: block; } }
+        display: block;
+        max-height: 100%;
+        max-width: 50vw; } }
   #about-us-container #About-us-copy {
     margin: 1em 3em; }
