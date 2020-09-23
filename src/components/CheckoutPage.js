@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Stripe from '@stripe/stripe-js'
 import Button from './DonateButton'
 import '../scss/stripe.scss'
 import img1 from '../assets/hero/saa.webp'
