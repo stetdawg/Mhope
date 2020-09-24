@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-
+import {loadStripe} from '@stripe/stripe-js'
  class DonateButton extends Component {
 
       
-onClick =  (props) => {
+onClick = async  (props) => {
       
       var checkoutButton = document.getElementById('checkout-button-price_1HUSZ3AthQ6lCmK1htqdj0Hd')
-      const stripe = window.Stripe('pk_live_51HNlgkAthQ6lCmK1MR2oqUT7CA1IT1a9osdkNHrIL7cluue9R7dsCcH1hsj2sfyQ7OiKGlQGC4WKw4C9KCZKM5O500sernw1ww')
+      const stripe = await loadStripe('pk_live_51HNlgkAthQ6lCmK1MR2oqUT7CA1IT1a9osdkNHrIL7cluue9R7dsCcH1hsj2sfyQ7OiKGlQGC4WKw4C9KCZKM5O500sernw1ww')
         // When the customer clicks on the button, redirect
         // them to Checkout.      checkoutButton.addEventListener('click',  function (props) { })
         stripe.redirectToCheckout({
