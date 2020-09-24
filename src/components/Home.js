@@ -27,7 +27,7 @@ componentDidMount(){
 
 render(){
 return (
-<div data-aos="fade-in-up" data-aos-duration="100" data-aos-easing="ease-in-quart" id="home">
+<div id="home">
      <Hero />
     <EmailCapture />
         <div id="gallery">

@@ -46,7 +46,7 @@
       #Checkout #donate-wrapper #button-holder {
         max-width: 45%; } }
     #Checkout #donate-wrapper #button-holder #checkout-button {
-      cursor: hand;
+      cursor: POINTER;
       float: center;
       margin: 1em;
       min-width: 20%; }

@@ -1,6 +1,6 @@
 import React from 'react'
 import  '../scss/Nav.scss'
-import logo from '../assets/Logo_MasteringHope_Plain.png'
+import logo from '../assets/Logo_MasteringHope_Plain.webp'
 import '../scss/Gallery.scss'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
