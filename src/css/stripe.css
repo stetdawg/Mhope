@@ -41,8 +41,12 @@
     display: flex;
     flex-wrap: wrap; }
     #Checkout #donate-wrapper #copy1 {
-      flex: 2 1; }
+      flex: 1 0; }
+    @media (min-width: 1025px) {
+      #Checkout #donate-wrapper #button-holder {
+        max-width: 45%; } }
     #Checkout #donate-wrapper #button-holder #checkout-button {
+      cursor: hand;
       float: center;
       margin: 1em;
       min-width: 20%; }

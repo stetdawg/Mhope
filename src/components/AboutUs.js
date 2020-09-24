@@ -9,7 +9,8 @@ let aboutUsStyle = {
 }
 const AboutUs = () => 
 
-    <div id="about-us-container" style={null}>
+    <div data-aos="fade-in" data-aos-duration="100" data-aos-easing="ease-in-quart" 
+    id="about-us-container" style={null}>
 
         <img src={img} alt="ITEL MODEL" id="ITEL-Model" />
         <img src={img1} alt="ITEL MODEL" id="ITEL-Mobile-Model" />

@@ -21,13 +21,13 @@ constructor(props) {
 
 componentDidMount(){
     setTimeout(() => {
-        this.setState({isVisible: true})}, 500) 
+        this.setState({isVisible: true})}, 400) 
     
 }
 
 render(){
 return (
-<div  id="home">
+<div data-aos="fade-in-up" data-aos-duration="100" data-aos-easing="ease-in-quart" id="home">
      <Hero />
     <EmailCapture />
         <div id="gallery">
