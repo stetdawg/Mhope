@@ -35,9 +35,11 @@ import {Route, Switch } from 'react-router-dom'
           <Donate/>
         </Route>
 
-        <Route exact path="/Donate">
+        <Route exact path="/Success">
           <Success/>
         </Route>
+
+        
       </Switch>
       <Footer />
 

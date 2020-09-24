@@ -15,7 +15,7 @@ onClick = async  (props) => {
             price: this.props.priceSKU,
             quantity: 1}],
           mode: 'payment',
-          successUrl: `${window.location.origin}/success`,
+          successUrl: `${window.location.origin}/Success`,
           cancelUrl: window.location.origin,
         })
         .then(function (result) {

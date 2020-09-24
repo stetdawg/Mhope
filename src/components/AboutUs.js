@@ -7,9 +7,7 @@ const innerViewportHeight = window.innerHeight
 let aboutUsStyle = {
     height: innerViewportHeight
 }
-const AboutUs = () => 
-
-    <div data-aos="fade-in" data-aos-duration="100" data-aos-easing="ease-in-quart" 
+const AboutUs = () => <div data-aos="fade-in" data-aos-duration="100" data-aos-easing="ease-in-quart" 
     id="about-us-container" style={null}>
 
         <img src={img} alt="ITEL MODEL" id="ITEL-Model" />
@@ -21,7 +19,6 @@ const AboutUs = () =>
 
             <p>Moving into the future, Mastering Hope will enter the realm of virtual education training/mentorship, increased food/resource distributions, education/scholarship, job placement, housing, mental health assistance, and motivational speaking. All of these efforts will support long term lifestyle improvement for people and communities who need it most. Community improvement equals societal gains, resulting in an improved world. The organization’s I.T.E.L. Model is a synopsis of our future endeavors.</p>
         </div>
-
     </div>
 
 
