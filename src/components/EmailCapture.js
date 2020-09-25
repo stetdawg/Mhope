@@ -15,6 +15,7 @@ const EmailCapture = () => <div id="email-capture">
                 <input type="text" id=""/>
                 <label className="label" name="name" htmlFor="name">Name: </label>
                 <input type="text" id=""/>
+                  <input type="submit" value="Submit"/>
                </form> 
             </div>
 
