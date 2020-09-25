@@ -4,12 +4,7 @@ import '../scss/EmailCapture.scss'
 
 
 const EmailCapture = () => <div id="email-capture">
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="email" name="email" />
 
-      <input type="text" name="name" />
-      <textarea name="message"></textarea>
-    </form>
 
 
             <p>Please join our mailing list today!
