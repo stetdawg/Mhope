@@ -30,9 +30,8 @@ return (
 <div id="home">
      <Hero />
      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
+  <input type="text" name="name-input" />
+  <input type="email" name="email-input" />
 </form>
     <EmailCapture />
         <div id="gallery">
