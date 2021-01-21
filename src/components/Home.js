@@ -53,7 +53,7 @@ return (
                 image={ img3}
                 title={"Impact"}
                 copy={<>
-                        Mastering Hope's impact has been tremendous. The organization has received over $80,000 in donations from the community, holding more than 11 distribution events, supplying over 6,000 food kits, 2,000 school supply kits, 700 gift cards, 700 toys, in addition to providing tons of clothes to men, women, and children. We have also distributed informational resources varying from food bank lists, free clinics, church services, and school district resources. Every dollar received is used to support our communities.
+                        Mastering Hope's impact has been tremendous. The organization has received over $80,000 in donations from the community, holding more than 17 distribution events, supplying over 6,000 food kits, 2,000 school supply kits, 700 gift cards, 700 toys, in addition to providing tons of clothes to men, women, and children. We have also distributed informational resources varying from food bank lists, free clinics, church services, and school district resources. Every dollar received is used to support our communities.
 
             </>}/> </>
             :null}
