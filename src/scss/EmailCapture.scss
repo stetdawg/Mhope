@@ -21,6 +21,13 @@
         border-style: hidden;
         padding: 10%;
         margin: 1em 0em 1em;
+
+        @include for_breakpoint(desktop){
+          padding: 8px 30px;
+          margin: 0 2% 2%;
+  
+        }
+
       }
       }
     }

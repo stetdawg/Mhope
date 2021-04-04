@@ -126,6 +126,12 @@ export default class Gallery extends Component {
                {
                    src: a[37],
                },
+               {
+                   src: a[38],
+               },
+               {
+                   src: a[39],
+               },
 
            ]}/>
    

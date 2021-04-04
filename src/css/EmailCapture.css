@@ -28,3 +28,7 @@
       border-style: hidden;
       padding: 10%;
       margin: 1em 0em 1em; }
+      @media (min-width: 1025px) {
+        #email-capture #form button {
+          padding: 8px 30px;
+          margin: 0 2% 2%; } }
