@@ -12,6 +12,7 @@
 
 #home {
   display: flex;
+  padding-top: 124px;
   flex-wrap: wrap; }
   #home #email-capture {
     background-color: #75C366;

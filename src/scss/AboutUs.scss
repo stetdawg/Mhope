@@ -5,6 +5,8 @@
     #about-us-container{
         flex: 1 0 auto;
         display: grid;
+        justify-items: center;
+
     @include for_breakpoint(mobile){
         margin-top: $nav_bar;
         padding-top: 0;
@@ -20,7 +22,7 @@
     }
 
     @include for_breakpoint(desktop){
-        grid-template-columns: min-content 50vw;
+        grid-template-rows: min-content 50vw;
         padding-top: 1em;
 
         #ITEL-Mobile-Model{
@@ -28,12 +30,14 @@
         }
         #ITEL-Model{
             display: block;
-            max-height: 100%;
             max-width: 50vw;
             }
     }
 #About-us-copy{
-    margin: 1em 3em;
+    margin: 1em 3em 5em;
+     @include for_breakpoint(desktop){    
+       max-width: 50%;
+     }
 }
 }
 

@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
+import Events from './components/Events'
 import Donate from './components/CheckoutPage'
 import Success from './components/Success'
 
@@ -27,8 +28,8 @@ import {Route, Switch } from 'react-router-dom'
           <AboutUs/>
         </Route>
 
-        <Route exact path="/Gallery">
-          <Gallery/>
+        <Route exact path="/Events">
+          <Events/>
         </Route>
 
         <Route exact path="/Donate">
@@ -39,6 +40,9 @@ import {Route, Switch } from 'react-router-dom'
           <Success/>
         </Route>
 
+        <Route exact path="/Gallery">
+          <Gallery/>
+        </Route>
         
       </Switch>
       <Footer />

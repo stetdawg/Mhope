@@ -23,3 +23,8 @@
         display: block; }
         #email-capture #form label {
           padding: 1%; } }
+    #email-capture #form button {
+      background-color: yellow;
+      border-style: hidden;
+      padding: 10%;
+      margin: 1em 0em 1em; }

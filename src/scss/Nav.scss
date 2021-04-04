@@ -11,7 +11,7 @@
     position: fixed;
     width: 100%;
     justify-content: space-around;
-    height: $nav_bar;    
+    height: $nav_bar + 10;    
     box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.548);
     z-index: 100;
       @include for_breakpoint(desktop){
