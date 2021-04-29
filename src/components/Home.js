@@ -39,7 +39,7 @@ return (
                 image={img1}
                 title={"Overview"}
                 copy={ <>
-                        Mastering Hope was started by a group of educators and community members from Lynwood, California, in April of 2020, to help support low socio-economic communities who were suffering increased unemployment and decreased food/resource accessibility due to the devastation of the coronavirus pandemic. Our immediate goal was to assist families with no tax, stimulus, or unemployment benefit prospects. However, the mission quickly expanded to aid our community at large and also surrounding cities. Mastering Hope is donation-based and has been able to, through the assistance of generous and hardworking community members, the dream team, accomplish a lot of goals towards combating pandemic poverty and hunger in the past three months.
+                        Mastering Hope was started by a group of educators and community members from Lynwood, California, in July of 2020, to help support low socio-economic communities who were suffering increased unemployment and decreased food/resource accessibility due to the devastation of the coronavirus pandemic. Our immediate goal was to assist families with no tax, stimulus, or unemployment benefit prospects. However, the mission quickly expanded to aid our community at large and also surrounding cities. Mastering Hope is donation-based and has been able to, through the assistance of generous and hardworking community members, the dream team, accomplish a lot of goals towards combating pandemic poverty and hunger in the past three months.
                  </> }/>
             <HomeItem
                 id={"gallery-item-container-2"}
