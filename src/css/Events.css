@@ -13,6 +13,10 @@
 .Events {
   min-height: 758px;
   padding-top: 124px;
-  width: auto; }
+  width: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center; }
   .Events #Poster {
-    max-width: 90%; }
+    width: 100%;
+    padding: 0 0 2em 0; }
