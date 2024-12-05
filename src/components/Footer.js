@@ -32,9 +32,9 @@ const Footer = () => <div className="footer">
 
 <div id="contact-us">
     <h4>Contact Us </h4>
-    <span>(424) 234-8865</span>
+    <span>(310) 433-8556</span>
     <br/>
-    <span>P.O. Box 10248 <br/> Marina Del Rey, CA 90295</span>
+    <span>angelababer@masteringhope.com</span>
 </div>
 
 <div id="Copyright">
